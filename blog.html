@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Born a Crime Analysis</title>
+    <link href="blog.css" rel="stylesheet">
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Summarise of Born a Crime</h1>
+        <p>Exploring themes, titles, and gender dynamics in Noah's memoir</p>
+    </header>
+
+    <div class="content-book">
+        <img src="https://m.media-amazon.com/images/I/91shjDQ3TBL._SY425_.jpg" alt="Born a Crime book cover"
+            class="author-img">
+        <h2>1. Renaming the Book</h2>
+        <p>If I could give <em>Born a Crime</em> a new title, I would call it: <span class="rename-title">"Between
+                Worlds"</span>.</p>
+        <p>This new title expresses the idea of internal conflict between freedom and opperation, love and fear, tradition. </p>
+    </div>
+    <div class="content-book">
+        <h2>2. Reflective Blog: </h2>
+        <div class="quote">
+            "Abel wanted a traditional marriage with a traditional wife… but he never fell in love with subservient
+            women… 'He only wants a woman who is free because his dream is to put her in a cage.'"
+        </div>
+         <p></p>
+
+        <button class="reflective-button" onclick="readMore()">Read More</button>
+        <div id="personal-reflection" class="hide">
+            <p>I've seen this dynamic in my own family. My aunt was a successful businesswoman when she married, and her
+                husband initially praised her ambition. Over time, however, he began complaining about her work hours
+                and subtly undermining her confidence. It culminated in him demanding she quit her job when they had
+                children, despite previously agreeing they would share childcare responsibilities.</p>
+            <p>What struck me was how gradual this shift was - so slow that my aunt didn't realize how much of herself
+                she was losing until she was completely financially dependent on him. This experience made me deeply
+                aware of how important it is to maintain one's independence in relationships and to watch for these
+                controlling tendencies, no matter how small they may seem at first.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Analysis of Born a Crime by Trevor Noah</p>
+    </footer>
+
+    <script>
+        function readMore() {
+            const content = document.getElementById('personal-reflection');
+            const btn = document.querySelector('.reflective-button');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                btn.textContent = 'Read More';
+            } else {
+                content.style.display = 'block';
+                btn.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+
+</html>
