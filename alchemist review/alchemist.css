@@ -1,18 +1,11 @@
  
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:cursive;
     line-height: 1.6;
-    color: var(--dark-color);
+    color: #2c3e50;
     background-color: #f9f9f9;
     overflow-x: hidden;
 }   
-:root {
-    --primary-color: #F26A1B;
-    --secondary-color: #F2B90F;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-}
 * {
     margin: 0;
     padding: 0;
@@ -21,26 +14,12 @@ body {
 
 
 header {
-    background-color: var(--primary-color);
+    background-color:  #F26A1B;
     color: white;
     padding: 2rem 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
 }
 
 h1 {
@@ -55,7 +34,7 @@ h1 {
 
 
 nav {
-    background-color: var(--secondary-color);
+    background-color: #F2B90F;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -102,7 +81,7 @@ nav {
     color: white;
 }
 .quote-slider {
-    background-color: var(--light-color);
+    background-color: #ecf0f1;
     padding: 3rem 0;
     text-align: center;
 }
@@ -126,7 +105,7 @@ nav {
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: #F26A1B;
 }
 
 .author {
@@ -138,7 +117,7 @@ nav {
 }
 
 .slider-nav button {
-    background-color: var(--secondary-color);
+    background-color: #F2B90F;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -149,7 +128,7 @@ nav {
 }
 
 .slider-nav button:hover {
-    background-color: var(--primary-color);
+    background-color: #F26A1B;
 }
 
 @keyframes fade {
@@ -175,24 +154,15 @@ section {
    
    
 }
-/* @font-face {
-    font-family: 'audula';
-    src: 
-} */
-
-
-/*  */
-
-
 h2 {
-    color: var(--secondary-color);
+    color: #F2B90F;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--light-color);
+    border-bottom: 2px solid #ecf0f1;
 }
 
 h3 {
-    color: var(--primary-color);
+    color: #2c3e50;
     margin: 1.5rem 0 1rem;
 }
 
@@ -269,41 +239,21 @@ p {
     margin-right: 11%;
 }
 
-   
-
 
 .blog-title {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: #F26A1B;
     margin-bottom: 1rem;
 }
 
-.blog-meta {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-}
-
-
 footer {
-    background-color: var(--primary-color);
+    background-color:#F26A1B;
     color: white;
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
 }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-.footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
 
 .introduction-content{
     margin-left: 2%;
@@ -311,7 +261,7 @@ footer {
 }
 .mobile-menu {
     display: none;
-    background-color: var(--secondary-color);
+    background-color:  #F2B90F;
     padding: 1rem;
 }
 
@@ -352,11 +302,49 @@ footer {
         font-size: 1.2rem;
     }
     
-    .image-grid {
+     .image-grid {
         grid-template-columns: 1fr;
     }
+    .embracing-change{
+        flex-direction: column;
+    }
+   .personal-legend{
+    flex-direction: column;
+   }
+    .journey{
+        flex-direction: column;
+    }
+    .main-idea{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height:100%;
+    }
+    .embracing-change img{
+        width: 60%;
+        height: 100%;
+        margin-right: 100%;
+    }
+
+.containers{
+    flex-direction: column;
+    width: 100%;
 }
-/*  */
+
+#paulo img{
+    margin-right: 10%;
+}
+
+.introduction-content{
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+} 
+}
+
+
 .containers{
     max-width: 1200px;
     margin: 0 auto;
@@ -367,10 +355,13 @@ footer {
         width: 270px;
         height: 250px;
     }
+    .header{
+        width: 100%;
+    }
 }
 .book{
     display: flex;
-    /* gap: 10%; */
+  
 }
 .book-content{
     font-weight: 160;

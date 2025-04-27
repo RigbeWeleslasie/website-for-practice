@@ -21,7 +21,7 @@
                         <li><a href="#book-review">Book Review</a></li>
                     </div>
                     <div class="marketasset">
-                        <li><a href="#marketing">Marketing Assets</a></li>
+                        <li><a href="market.html">Marketing Assets</a></li>
                     </div>
                 </div>
             </ul>
@@ -29,7 +29,7 @@
     </nav>
     <section class="quote-slider" id="quotes">
         <div class="containers">
-            <img id="paulo" src="paulocohelo.jpeg" alt="">
+            <img id="paulo" src="paulocohelo.jpeg">
             <div class="slider-container">
                 <h2>Quotes from The Alchemist</h2>
                 <div class="slide active">
@@ -40,40 +40,30 @@
 
                 </div>
                 <div class="slide">
-
                     <p class="quote">
                         "The secret of happiness is to see all the marvels of the world, and never to forget the drops
                         of oil on the spoon."</p>
                     <p class="author">— The alchemist,Pauolo coelho</p>
-
                 </div>
                 <div class="slide">
-
                     <p class="quote">"There is only one thing that makes a dream impossible to achieve: the fear of
                         failure."</p>
                     <p class="author">— The alchemist,Pauolo coelho</p>
-
                 </div>
                 <div class="slide">
-
                     <p class="quote">"The first thing I learned about money was that it gives you choices. People don't
                         want to be rich. They want to be able to choose."</p>
                     <p class="author">—The alchemist,Pauolo coelho</p>
-
                 </div>
                 <div class="slide">
-
                     <p class="quote">"Tell your heart that the fear of suffering is worse than the suffering itself. And
                         that no heart has ever suffered when it goes in search of its dreams."</p>
                     <p class="author">— The alchemist,Pauolo coelho</p>
-
                 </div>
                 <div class="slide">
-
                     <p class="quote">
                         "Every blessing ignored becomes a curse."</p>
                     <p class="author">— The alchemist,Pauolo coelho</p>
-
                 </div>
                 <div class="slide">
 
@@ -228,26 +218,6 @@
         }
 
         setInterval(nextSlide, 8000);
-
-
-        document.querySelectorAll('nav a, .mobile-menu a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-
-                mobileMenu.classList.remove('active');
-            });
-        });
-
-
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        menuToggle.addEventListener('click', function () {
-            mobileMenu.classList.toggle('active');
-        });
     </script>
 </body>
 
