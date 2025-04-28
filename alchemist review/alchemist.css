@@ -5,6 +5,7 @@ body {
     color: #2c3e50;
     background-color: #f9f9f9;
     overflow-x: hidden;
+    width: 100%;
 }   
 * {
     margin: 0;
@@ -285,7 +286,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 2rem;
     }
@@ -295,7 +296,7 @@ footer {
     }
     
     .nav-links {
-        display: none;
+        display: block;
     }
     
     .quote {
@@ -324,7 +325,6 @@ footer {
     .embracing-change img{
         width: 60%;
         height: 100%;
-        margin-right: 100%;
     }
 
 .containers{
